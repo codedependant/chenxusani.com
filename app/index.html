@@ -5,28 +5,41 @@
         <title>Chè Nxusani</title>
         <meta name="description" content="Frontend web developer and designer.">
         <meta name="viewport" content="width=device-width">
-        <link rel="shortcut icon" href="/favicon.ico">
+        <link rel="shortcut icon" href="/favicon.ico?v=1">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <style>
+
+            *, *:before, *:after {
+              -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+             }
+
+            h1,h2,h3,h4,h5,h6,hgroup,
+            ul,ol,dd,
+            p,figure,
+            pre,table,fieldset,hr{
+                margin-bottom:1.5rem;
+            }
+
             body {
               /*background: #F15A5C;*/
-              background: rgb(216, 57, 68);
+              background: #D83944;
               color: white;
               
-              font-family: "Whitney SSm A", "Whitney SSm B";
+              font-family: "Whitney SSm A", "Whitney SSm B", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
               font-weight: 300;
               font-style: normal;
               font-size: 14px;
               line-height: 1.5em;
 
               padding: 5em;
-              max-width: 32em;
+              
               margin-left: auto;
               margin-right: auto;
 
               transition: all .8s;
             }
+
 
             h1, h5 {
               margin: 0;
@@ -35,7 +48,7 @@
             }
 
             h1 {
-              font-family: "Sentinel A", "Sentinel B";
+              font-family: "Sentinel A", "Sentinel B", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
               font-size: 5em;
               line-height: 0.8em;
               margin-bottom: 0.1em;
@@ -50,7 +63,24 @@
             a {
                 color: inherit;
             }
-
+            .section
+            {
+              margin-left: auto;
+              margin-right: auto;
+              margin-bottom: 4em;
+            }
+            .section--aboutme
+            {
+              max-width: 32em;
+            }
+            .section--experiments
+            {
+              max-width: 45em;
+            }
+            .section--experiments > div
+            {
+              margin-bottom: 1.5rem;
+            }
             .social-icon
             {
               display: inline-block;
@@ -67,32 +97,27 @@
                 body {
                     padding: 1em;
                 }
+                .section--aboutme, .section--experiments
+                {
+                  max-width: 100%;
+                }   
             }
 
         </style>
         <link rel="stylesheet" href="http://cloud.typography.com/6138032/649164/css/fonts.css" />
     </head>
     <body>
-        <!--[if lt IE 10]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
-
+        <section class="section section--aboutme">
         <h1>
           <div>Chè</div>
           Nxusani
         </h1>
         <h5>Developer & Designer</h5>
-        <section>
           <p>
             Hey there, I’m a software developer building applications for web. I specialize in application architecture and user experience design.</p> 
 
-          <p>I currently work in Berlin, Germany at <a href="http://www.meyermillersmith.com/">Meyer Miller Smith</a> as a Senior Frontend Developer.
+          <p>Currently working in Berlin, Germany at <a href="http://www.meyermillersmith.com/">Meyer Miller Smith</a> as a Senior Frontend Developer, building awesome things for clients such as Red Bull and Axel Springer.
            </p>
-
-<!--           <p>
-            For over 7 years, I had worked at <a href="http://www.is.co.za">Internet Solutions</a>, South Africas largest corporate ISP, building enterprise scale web applications. These included a <a href="http://www.cloud.is.co.za">cloud computing platform</a>, a quoting engine and numerous internal support and customer self service systems.</p> -->
-
 
           <p>
             I hold a BSc Hons degree in Computer Sciences from the University of the Witwatersrand. To find out more about my career so far, take a look at <a href="https://www.linkedin.com/pub/che-nxusani/51/760/294">my résumé.</a>
@@ -105,6 +130,20 @@
 
           <p>Feel free to say hi, <a href="mailto:che.nxusani@gmail.com">email me</a> anytime.</p>
         </section>
+
+        <section class="section section--experiments">
+          <p data-height="268" data-theme-id="6267" data-slug-hash="Kkeyb" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/codefendant/pen/Kkeyb/'>Animated Login Form</a> by Che (<a href='http://codepen.io/codefendant'>@codefendant</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+
+          <p data-height="268" data-theme-id="6267" data-slug-hash="uanzj" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/codefendant/pen/uanzj/'>Animated List</a> by Che (<a href='http://codepen.io/codefendant'>@codefendant</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+          
+          <p data-height="268" data-theme-id="6267" data-slug-hash="HLJyr" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/codefendant/pen/HLJyr/'>Animated Sign Up Form</a> by Che (<a href='http://codepen.io/codefendant'>@codefendant</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+
+          <script async src="//codepen.io/assets/embed/ei.js"></script>
+
+        </section>
+
+
+        <!--
         <span class="social-icons">
           <a class="social-icon" href="mailto:che.nxusani@gmail.com">
             <svg  width="100%" height="100%" viewBox="0 0 40 28" fill="#FFFFFF">
@@ -124,8 +163,8 @@
               <use xlink:href="#Shape2"></use>
             </svg>
           </a>
-
         </span>
+        -->
 
 
 
